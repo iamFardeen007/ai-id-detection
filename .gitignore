@@ -1,0 +1,64 @@
+# ═══════════════════════════════════════════════
+# AI ID Detection - .gitignore
+# ═══════════════════════════════════════════════
+
+# --- Data (too large for git) ---
+data/idnet/
+data/aadhaar/
+data/processed/
+data/ela/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+!reports/figures/*.png
+!reports/figures/*.jpg
+
+# --- Models (too large for git) ---
+models/saved/*.pth
+models/saved/*.pt
+models/saved/*.pkl
+models/saved/*.joblib
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- Environment ---
+.env
+*.env
+.venv/
+env/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# --- IDE ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Kaggle ---
+.kaggle/
+notebooks/anaconda_projects/
+01_environment_test.ipynb
+03_image_processing.ipynb
+opencv_practice.ipynb
+opencv_tutorial.ipynb
